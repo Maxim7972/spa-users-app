@@ -50,7 +50,7 @@ async function renderTodos() {
             className: 'todo-card',
             children: [
                 createElement('h4', { text: todo.title }),
-                createElement('p', { text: Completed: ${todo.completed} })
+                createElement('p', { text: `Completed: ${todo.completed}` })
             ]
         });
         app.appendChild(card);
@@ -92,3 +92,4 @@ async function renderComments() {
         app.appendChild(card);
     });
 }
+
